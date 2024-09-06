@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main_box{
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one{
+    color:white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+}
+.sidebar_menu{
+    position: fixed;
+    height: 100vh;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(223, 210, 210, 0.1);
+    box-shadow: 0 0 6px rgb(255, 255,255,0.5);
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgb(255, 255,255,0.5);
+  
+}
+
+.btn_two{
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 270px;
+    top: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: -100px;
+    
+}
+
+.sidebar_menu .menu li{
+    margin: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    padding: 8px;
+}
+
+
+.sidebar_menu .social_media {
+    color: white;
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+   
+
+}
+
+.sidebar_menu .social_media i {
+    color: white;
+    opacity: 1;
+    padding: 0 5px;
+ 
+ 
+}
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgb(255, 255,255,0.5);
+
+}
+
+.btn_one i :hover{
+    font-size: 40px;
+    
+}
+
+
+.sidebar_menu .social_media i :hover{
+opacity: 1;
+transform: scale(1);
+}
+
+.btn_two :hover{
+    font-size: 30px;
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one i {
+opacity: 0;
+}s
